@@ -1,0 +1,19 @@
+class List {
+	field int x, y;
+	field List next;
+
+	constructor List new(int ax, int ay, List anext) {
+		let x = ax;
+		let y = ay;
+		let next = anext;
+		return this;
+	}
+
+	method void dispose() {
+		if (~(next = null)) {
+			do next.dispose();
+		}
+		do Memory.deAlloc(this);
+		return;
+	}
+}

@@ -1,0 +1,45 @@
+class Grid {
+	field Array data;
+	field int width, height;
+	field int length;
+
+	constructor Grid new(int x, int y) {
+		let width = x;
+		let height = y;
+		let length = x*y;
+		let data = Array.new(length);
+		return this;
+	}
+
+	method void add(int x, int y, int val){
+		var int n;
+		let n = y*width+x;
+		let data[n] = val;
+		return;
+	}
+
+	method void draw() {
+		var int i,j,n;
+		let n = 0;
+		while (n < length) {
+			let j = n/width;
+			let i = n-(j*width);
+			if (data[n] = 0){
+				do Screen.setColor(false);
+				do Screen.drawRectangle(i*16,j*16,i*16+15,j*16+15);
+			} else {
+				do Screen.setColor(true);
+				do Screen.drawRectangle(i*16,j*16,i*16+15,j*16+15);
+				let data[n] = data[n]-1;
+			}
+			let n = n+1;
+		}
+		return;
+	}
+
+	method void dispose() {
+		do data.dispose();
+		do Memory.deAlloc(this);
+		return;
+	}
+}

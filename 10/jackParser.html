@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jack Language Parser</title>
+	<link rel="stylesheet" type="text/css" href="jackParser.css">
+  </head>
+  <body>
+	<div id="topbar">
+		<label for="fileinput">JACK FILE:</label>
+		<input type="file" id="fileinput" accept=".jack" autocomplete="off">
+		<button id=save>Save</button>
+	</div>
+	<div id="body">
+		<div class="container">
+			<label for="input">Source:</label>
+			<textarea id="source" rows="30" cols="80" autocomplete="off"></textarea>
+		</div>
+		<div class="container">
+			<label for="input">Output:</label>
+			<textarea id="output" rows="30" cols="80" autocomplete="off"></textarea>
+		</div>
+	</div>
+	<script src="jackParserApp.js "type="text/javascript"></script>
+	<script src="jackParser.js "type="text/javascript"></script>
+  </body>
+</html>

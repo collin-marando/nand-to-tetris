@@ -1,0 +1,23 @@
+#topbar {
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+#body {
+	margin-left: 15px;
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+	display: inline-block;
+}
+
+.container label {
+	display: block;
+}
+
+.container textarea{
+	resize: none;
+	tab-size : 2;
+}

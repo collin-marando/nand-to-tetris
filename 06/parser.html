@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hack Assembly Language Parser</title>
+	<link rel="stylesheet" type="text/css" href="parser.css">
+  </head>
+  <body>
+	<div id="topbar">
+		<label for="fileinput">ASM FILE:</label>
+		<input type="file" id="fileinput" accept=".asm" autocomplete="off">
+		<button id=save>Save</button>
+	</div>
+	<div id="body">
+		<div class="container">
+			<label for="input">Source:</label>
+			<textarea id="source" rows="30" cols="35" autocomplete="off"></textarea>
+		</div>
+		<div class="container">
+			<label for="input">Output:</label>
+			<textarea id="output" rows="30" cols="25" autocomplete="off"></textarea>
+		</div>
+	</div>
+	<script src="parserApp.js "type="text/javascript"></script>
+	<script src="parser.js "type="text/javascript"></script>
+  </body>
+</html>

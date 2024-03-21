@@ -1,0 +1,9 @@
+NAME        Used        Optimal
+Nand        1           1
+Not         1           1
+And         2
+Or          3
+Xor         4
+Mux         4
+DMux        5
+Not16       16
